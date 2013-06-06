@@ -1,0 +1,112 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      3503,        103]
+NotebookOptionsPosition[      3066,         84]
+NotebookOutlinePosition[      3421,        100]
+CellTagsIndexPosition[      3378,         97]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"PrependTo", "[", 
+   RowBox[{"$Path", ",", 
+    RowBox[{"NotebookDirectory", "[", "]"}]}], "]"}], ";"}]], "Input",
+ CellChangeTimes->{{3.522798325594899*^9, 3.522798334885449*^9}, {
+   3.529612021061749*^9, 3.529612021892558*^9}, 3.579521230327283*^9, 
+   3.5795239364261208`*^9}],
+
+Cell[BoxData[
+ RowBox[{"<<", "BlogClient`"}]], "Input",
+ CellChangeTimes->{{3.50475289299284*^9, 3.504752893096817*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"nbfile", "=", 
+   RowBox[{"FileNameJoin", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"NotebookDirectory", "[", "]"}], ",", 
+      "\"\<example-notebook.nb\>\""}], "}"}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.52961169557999*^9, 3.529611708278049*^9}, {
+   3.5296117397453203`*^9, 3.5296117488200808`*^9}, {3.549587052684661*^9, 
+   3.5495870696421843`*^9}, 3.5565775325833597`*^9, {3.579523805231057*^9, 
+   3.579523831184206*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"nb", "=", 
+   RowBox[{"NotebookOpen", "[", 
+    RowBox[{"nbfile", ",", 
+     RowBox[{"Visible", "\[Rule]", "True"}]}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.52961205376171*^9, 3.529612074519958*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"SetOptions", "[", 
+   RowBox[{"nb", ",", 
+    RowBox[{"WindowSize", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"500", ",", "Automatic"}], "}"}]}]}], "]"}], ";"}]], "Input",
+ CellChangeTimes->{{3.52961205376171*^9, 3.529612079319688*^9}, {
+  3.549587086048902*^9, 3.5495870950600348`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"PostNotebook", "[", 
+  RowBox[{"nbfile", ",", 
+   RowBox[{"\"\<SiteAddress\>\"", "\[Rule]", "\"\<SiteAddress\>\""}], ",", 
+   RowBox[{"\"\<Port\>\"", "\[Rule]", "\"\<\>\""}], 
+   RowBox[{"(*", " ", "usually", " ", "*)"}], ",", 
+   RowBox[{"\"\<XMLRPCServerPath\>\"", "\[Rule]", "\"\<xmlrpc.php\>\""}], ",", 
+   RowBox[{
+   "\"\<Title\>\"", "\[Rule]", 
+    "\"\<Mapping random walks to a closed path\>\""}], ",", 
+   RowBox[{"\"\<Username\>\"", "\[Rule]", "\"\<YourUsernameHere\>\""}], ",", 
+   RowBox[{"\"\<Password\>\"", "\[Rule]", "\"\<YourPasswordHere\>\""}], ",", 
+   RowBox[{"\"\<Categories\>\"", "\[Rule]", 
+    RowBox[{"{", "}"}]}], ",", 
+   RowBox[{"\"\<Debug\>\"", "\[Rule]", "True"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.529612230168651*^9, 3.529612268285911*^9}, {
+  3.549587143072481*^9, 3.5495871815740833`*^9}, {3.5565775511665287`*^9, 
+  3.556577616047163*^9}, {3.5795222476955767`*^9, 3.579522252499069*^9}, {
+  3.579523856751636*^9, 3.579523902087716*^9}}]
+},
+WindowSize->{740, 656},
+WindowMargins->{{Automatic, 22}, {Automatic, 0}},
+FrontEndVersion->"8.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (November 6, \
+2010)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 315, 7, 27, "Input"],
+Cell[875, 29, 120, 2, 27, "Input"],
+Cell[998, 33, 484, 11, 27, "Input"],
+Cell[1485, 46, 244, 6, 27, "Input"],
+Cell[1732, 54, 325, 8, 27, "Input"],
+Cell[2060, 64, 1002, 18, 73, "Input"]
+}
+]
+*)
+
+(* End of internal cache information *)
