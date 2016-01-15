@@ -35,8 +35,6 @@ Now evaluate those cells.  If the "Debug" option is set True, you'll see a bunch
 more info
 =========
 
-See my blog post describing the XML-RPC encoding/decoding:
-
-http://www.rule146.com/2011/09/21/blog-this-notebook-a-wordpress-client-for-mathematica/
+See my [blog post](http://paul-jean.github.io/2011/02/11/weblog-client.html) describing the XML-RPC encoding/decoding.
 
 
