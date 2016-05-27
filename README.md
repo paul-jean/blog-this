@@ -29,7 +29,7 @@ You may also need to change the WordPress path and port number options, dependin
 
 Now evaluate those cells.  If the "Debug" option is set True, you'll see a bunch of log messages showing the progress of the HTML and image export, like this:
 
-![example export][images/export-output.png "Export output"]
+![example export](images/export-output.png "Export output")
 
 more info
 =========
