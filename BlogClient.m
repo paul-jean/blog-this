@@ -4,7 +4,7 @@
 
 (* Created by the Wolfram Workbench Jan 23, 2011 *)
 
-BeginPackage["BlogClient`"]
+BeginPackage["BlogClient`", "JLink`"]
 (* Exported symbols added here with SymbolName::usage *) 
 
 BlogExport::usage = "BlogExport[nbfile_String, htmlfile_String, date_String]"
@@ -22,10 +22,13 @@ styled[s_String] := Style[s, 12, FontFamily->"Helvetica"]
 
 DebugPrint["Loadig BlogClient` ...."]
 
+InstallJava[]
+
+
 
 Options[BlogExport] = {
-	"SiteAddress"->"localhost", 
-	"Port"->8888, 
+	"SiteAddress"->Automatic, 
+	"Port"->Automatic, 
 	"WordPressPath"->Automatic, 
 	"ConversionRules"->{
 		"Subsection"->{"<h2>", "</h2>"},
@@ -179,9 +182,9 @@ xmlrpcparse[
    xmlrpcparse[XMLElement
      ["value", {}, {XMLElement[type, {}, val]}]], {1}]
 
-Options[BlogRequest] = {"Username" -> "", 
-   "Password" -> "", "SiteAddress" -> "localhost", 
-   "Port" -> 8888, "XMLRPCServerPath" -> "/wordpress/xmlrpc.php"};
+Options[BlogRequest] = {"Username" -> Automatic, 
+   "Password" -> Automatic, "SiteAddress" -> Automatic, 
+   "Port" -> Automatic,"XMLRPCServerPath" -> "/xmlrpc.php"};
 
 BlogRequest[rpcmethod_String, params_List, opts : OptionsPattern[]] :=
   JLink`JavaBlock@Module[{username, password, siteaddress, port, xmlrpcserverpath, 
